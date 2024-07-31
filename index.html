@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.20.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.20.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.20.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.20.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.20.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.20.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.20.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.20.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.20.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.20.0/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+</head>
+    <body>
+        <div id="page" class="site">
+            <header>
+                <div class="container">
+                    <nav>
+                        <div class="header-left">
+                            <a href="index.html">squad x</a>
+                            <ul>
+                                <!-- <li><a href="#0">About</a></li>
+                                <li><a href="#0">Feature</a></li>
+                                <li><a href="#0">Pricing</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="header-right">
+                            <div class="menu-bar">
+                                <a href="#0" class="menu-trigger" trigger-button data-target="mobile-menu"><i class="ri-menu-line"></i></a>
+                            </div>
+                            <div class="list-header">
+                                <ul>
+                                    <li>
+                                        <form class="search-form" id="search-bar">
+                                            <input type="text" placeholder="Search...">
+                                            <div class="search__button" id="search-button">
+                                                <a href="#0"><i class="ri-search-line"></i></a>
+                                            </div>
+                                        </form> 
+                                    </li>                                 
+                                    <li class="button"><a href="#0" class="Primary-linear" trigger-button data-target="login-popup">Sign in</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <div class="video">
+                    <div class="ob-cover">
+                        <video autoplay loop muted plays-inline src="./video/Dog.mp4"></video>
+                        <div class="title-info">
+                            <div class="container wide up animate">
+                                <div class="wrap">
+                                    <img src="./img/logo_revever.png" alt="">
+                                    <h2>find your squad thought your team</h2>
+                                    <a href="Team-Create.html" class="button-main">
+                                        <span>Create & Join Team</span>
+                                        <div class="top"></div>
+                                        <div class="left"></div>
+                                        <div class="bottom"></div>
+                                        <div class="right"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>  
+                </div>
+                <div class="dotgame">
+                        <div class="wrap up animate">
+                            <div class="title"><h2>GAME content</h2></div>
+                        </div>
+                        <div class="dotgrid">
+                            <div class="wrapper">
+                                <div class="item up animate">
+                                    <div class="dot-image">
+                                        <div class="thumbnail">
+                                            <a href="#1"><img src="./img/Dota2.jpg" alt=""></a>
+                                        </div>
+                                        <div class="thumbnail hover">
+                                            <a href="#0"><video autoplay loop muted plays-inline src="./video/Dota 2 Gamescom Trailer.mp4"></video></a>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2>Dota 2</h2>
+                                            <p>Dota is the deepest multi-player action RTS game ever made and there's 
+                                            always a new strategy or tactic to discover.</p>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="item down animate">
+                                    <div class="dot-image">
+                                        <div class="thumbnail">
+                                            <a href="#1"><img src="./img/Apex.jpg" alt=""></a>
+                                        </div>
+                                        <div class="thumbnail hover">
+                                            <a href="#0"><video autoplay loop muted plays-inline src="/video/Apex Legends _ Stories from the Outlands - “Encore”.mp4"></video></a>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2>Apex</h2>
+                                            <p>Dig deeper into new game updates coming in Apex Legends: Arsenal including a World's Edge Map Update, Weapon Mastery, Firing Range Map Update and more!</p>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="item up animate">
+                                    <div class="dot-image">
+                                        <div class="thumbnail">
+                                            <a href="#1"><img src="./img/valorant.jpg" alt=""></a>
+                                        </div>
+                                        <div class="thumbnail hover">
+                                            <a href="#0"><video autoplay loop muted plays-inline src="./video/Valorant.mp4"></video></a>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2>Valorant</h2>
+                                            <p>valorantinfo.com is the unofficial website of the Valorant game. You will find information about weapons, skins, player cards, buddies, graffiti.</p>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="item down animate">
+                                    <div class="dot-image">
+                                        <div class="thumbnail">
+                                            <a href="#1"><img src="./img/Lol.jpg" alt=""></a>
+                                        </div>
+                                        <div class="thumbnail hover">
+                                            <a href="#0"><video autoplay loop muted plays-inline src="./video/League of Legends.mp4"></video></a>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2>League of Legends</h2>
+                                            <p>League of Legends is a multiplayer online battle arena (MOBA) game in which the player controls a character ("champion")with a set of unique abilities from an isometric perspective. As of 2023, there are over 160 champions available to play.</p>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="item up animate">
+                                    <div class="dot-image">
+                                        <div class="thumbnail">
+                                            <a href="#1"><img src="./img/csgo.jpg" alt=""></a>
+                                        </div>
+                                        <div class="thumbnail hover">
+                                            <a href="#0"><video autoplay loop muted plays-inline src="./video/Counter-Strike_ Global Offensive Trailer.mp4"></video></a>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2>CS:GO</h2>
+                                            <p>Counter-Strike: Global Offensive (CS:GO) is a 2012 multiplayer tactical first-person shooter developed by Valve and Hidden Path Entertainment.</p>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="banner">
+                    <div class="container">
+                        <div class="wrap">
+                            <div class="content">
+                                <div class="loader"></div>
+                                <span>Promo</span>
+                                <h3 class="title">A new challenge <br> to reach the top</h3>
+                                <a class="fancy" href="#Tour">
+                                    <span class="top-key"></span>
+                                    <span class="text">Go to tour</span>
+                                    <span class="bottom-key-1"></span>
+                                    <span class="bottom-key-2"></span>
+                                </a>
+                                <!-- <img src="./img/red.png" alt=""> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Tour" id="Tour">
+                        <div class="heading up animate">
+                            <div><h2 class="title">Tournament</h2></div>
+                        </div>
+                        <div class="dot-tour scrollto">
+                            <div class="wrapper">
+                                <div class="wrap-tour">
+                                    <div class="item-tour up animate">
+                                        <div class="dot-tour">
+                                            <div class="thumbnail-tour">
+                                                <a href="#0"><img src="./img/istanbul.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2><a href="">champions 2022 istanbul</a></h2>
+                                            <span>Location: Turkey Istanbul ; Venue: Volkswagen Arena ; Format: Group Stage (GSL Format) Playoffs (Double Elimination) ; Prize Pool: $1,000,000 USD</span>
+                                        </div>                   
+                                    </div>
+                                    <div class="item-tour down animate">
+                                        <div class="dot-tour">
+                                            <div class="thumbnail-tour">
+                                                <a href="#0"><img src="./img/berlin.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2><a href="">champions 2022 berlin</a></h2>
+                                            <span>VALORANT Champions Tour 2022: Game Changers Championship ; Patch: 5.09 ; Type: Offline ; Location: Germany Berlin ; Venue: LEC Studio ; Prize Pool: $500,000 USD.</span>
+                                        </div>   
+                                    </div>
+                                    <div class="item-tour up animate">
+                                        <div class="dot-tour">
+                                            <div class="thumbnail-tour">
+                                                <a href="#0"><img src="./img/lck.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2><a href="">The LCK 2023 Spring Season</a></h2>
+                                            <span>The LCK 2023 Spring Season is the first split of the third year of Korea's professional League of Legends league under partnership. Ten teams compete in a round robin group stage.</span>
+                                        </div>   
+                                    </div>
+                                    <div class="item-tour down animate">
+                                        <div class="dot-tour">
+                                            <div class="thumbnail-tour">
+                                                <a href="#0"><img src="./img/esl.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2><a href="">ESL Championship</a></h2>
+                                            <span>ESL Play is the world's largest independent league for esports. Established in 1997, we're proud to be the home to those who love competitive gaming.</span>
+                                        </div>   
+                                    </div>
+                                    <div class="item-tour up animate">
+                                        <div class="dot-tour">
+                                            <div class="thumbnail-tour">
+                                                <a href="#0"><img src="./img/spu.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2><a href="">Sripatum E-sport Club.</a></h2>
+                                            <span>Sripatum E-sport Club. 4608 likes · 34 talking about this. Organize an E-Sport competition within Sripatum University.</span>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </main>
+            <footer>
+                <div class="inner-footer">
+                    <div class="container">
+                        <div class="wrap">
+                            <div class="top">
+                                <div class="subscribe">
+                                    <h3>Get voucher from us</h3>
+                                    <p class="grey-color">Coupert Tests Millions Of Promo Codes So You Don’t Have To. Download Coupert For Free Now! We'll Help You Shop With Ease By Applying Download Coupert For Free Now! We'll Help You Shop With Ease By Applying</p>
+                                    <form action="" class="search">
+                                        <i class="ri-mail-line"></i>
+                                        <input type="text" class="input" placeholder="Enter you mail">
+                                        <input type="submit" class="submit">
+                                        <i class="ri-arrow-right-line"></i>
+                                    </form>
+                                </div>
+                                <div class="list-block">
+                                    <h3 class="dot-title">Service</h3>
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="#">Delivery Information</a></li>
+                                        <li><a href="#">Term & Condition</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                    </ul>
+                                </div>
+                                <div class="list-block">
+                                    <h3 class="dot-title">Pages</h3>
+                                    <ul>
+                                        <li><a href="#">My Account</a></li>
+                                        <li><a href="#">Login</a></li>
+                                        <li><a href="#">Wishlist</a></li>
+                                        <li><a href="#">Cart</a></li>
+                                        <li><a href="#">Checkout</a></li>
+                                    </ul>
+                                </div>
+                                <div class="list-block">
+                                    <h3 class="dot-title">Pages</h3>
+                                    <div class="comp-address grey-color">
+                                        <p>Simpang 5 No.1<br>Central Java - ID</p>
+                                        <p>
+                                            <a href="">+66956192616</a>
+                                            <br>
+                                            <a href="">hello@youtube.com</a>
+                                        </p>
+                                        <p>
+                                            Weekdays: 6AM to 6PM<br>
+                                            Saturday: 6AM to 3PM<br>
+                                            Sunday: Closed
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="list-inline">
+                                    <ul>
+                                        <li><a href=""><i class="ri-facebook-line"></i></a></li>
+                                        <li><a href=""><i class="ri-instagram-line"></i></a></li>
+                                        <li><a href=""><i class="ri-twitter-line"></i></a></li>
+                                        <li><a href=""><i class="ri-pinterest-line"></i></a></li>
+                                        <li><a href=""><i class="ri-discord-line"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="copyright">
+                                    <p>
+                                        <i class="ri-copyright-line">2023. dotWebdesign. All right reserved</i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="overlay" data-overlay></div>
+        <div id="login-popup" class="login-popup">
+            <div class="wrap">
+                <a href="#0" class="close-trigger" close-button>
+                    <i class="ri-close-line"></i>
+                </a>
+                <div class="header-popup">
+                    <h1 class="title">squad x</h1>
+                </div>
+                <div class="main-popup">
+                    <p>Let Go!</p>
+                    <ul>
+                        <li class="button"><a href="Login-page.html" class="Primary-linear">Sign in</a></li>
+                        <p class="between">Or</p>
+                        <li class="button"><a href="Register-page.html" class="Primary-linear">Create Account</a></li>
+                    </ul>
+                </div>
+                <div class="options">
+                    <div class="separator">
+                        <p>or continue with</p>
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="ri-google-fill ri-2x"></i></a></li>
+                        <li><a href="#"><i class="ri-apple-fill ri-2x"></i></a></li>
+                        <li><a href="#"><i class="ri-facebook-fill ri-2x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="wrap">
+                <a href="#0" class="Logo"><Span>S</Span>QUAD X</a>
+                <a href="#0" class="close-trigger" close-button>
+                    <i class="ri-close-line"></i>
+                </a>
+                <div class="main-menu">
+                    <nav>
+                        <ul>
+                            <li><a href=""><span>Home</span></a></li>
+                            <li class="has-child"><a href="">
+                                <span>Game</span>
+                                <span class="child-trigger"><i class="ri-arrow-down-s-line"></i></span>
+                                </a>
+                                <ul class="sub-menu list-block">
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Chanel</a></li>
+                                    <li><a href="#">Dolce</a></li>
+                                    <li><a href="#">Ganni</a></li>
+                                    <li><a href="#">Gucci</a></li>
+                                    <li><a href="#">Louis</a></li>
+                                    <li><a href="#">Nike</a></li>
+                                    <li><a href="#">Prada</a></li>
+                                </ul>
+                            </li>
+                            <li><a href=""><span>Speciel</span></a></li>
+                            <li class="has-child">
+                                <a href="">
+                                    <span>Tournament</span>
+                                    <span class="child-trigger"><i class="ri-arrow-down-s-line"></i></span>
+                                </a>
+                                <ul class="sub-menu list-block">
+                                    <li><a href="#">Dolce & Gabbana</a></li>
+                                    <li><a href="#">Louis Vuitton</a></li>
+                                    <li><a href="#">Versace</a></li>
+                                    <li><a href="#">Dior</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><span>Support</span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="list-header-mobile">
+                        <div class="button3" trigger-button data-target="login-popup">
+                            <a href="#0" class="Red">Sign in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
